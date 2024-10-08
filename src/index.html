@@ -1,4 +1,224 @@
 <%= require('./html-includes/header.html')() %>
 
+<header class="header">
+  <div class="flex items-center gap-3">
+    <button class="btn btn-text btn-sec lg:hidden" data-toggle-link="menu">
+      <c-icon class="icon" href="/img/icons.svg#menu"></c-icon>
+    </button>
+    <a href="/#top" data-scroll class="header-logo">
+      <img src="/img/logo.svg" alt="" />
+    </a>
+  </div>
+
+  <a href="javascript:;" class="gap-2 btn btn-text hover-underline-wrapper max-lg:hidden">
+    <c-icon class="text-2xl icon text-primary" href="/img/icons.svg#map-point"></c-icon>
+    <div class="text-sm font-medium hover-underline">г. Краснодар, ул. Северная 490</div>
+  </a>
+  <a href="javascript:;" class="gap-2 btn btn-text hover-underline-wrapper max-lg:hidden">
+    <c-icon class="text-2xl icon text-primary" href="/img/icons.svg#email"></c-icon>
+    <div class="text-sm font-medium hover-underline">marketing_consulting@arverresult.store</div>
+  </a>
+
+  <a href="javascript:;" class="btn btn-text hover-underline">
+    <span class="text-xl font-black font-alt sm:text-3xl">8 900 000 18 49</span>
+  </a>
+</header>
+
+<div class="menu" id="menu" data-toggle-cover>
+  <div class="px-4 header">
+    <div class="flex items-center gap-3">
+      <button class="btn btn-text btn-sec" data-toggle-link="menu">
+        <c-icon class="icon" href="/img/icons.svg#cross"></c-icon>
+      </button>
+      <a href="javascript:;" class="header-logo">
+        <img src="/img/logo.svg" alt="" />
+      </a>
+    </div>
+
+    <button class="btn btn-text hover-underline">
+      <span class="text-xl font-black font-alt">8 900 000 18 49</span>
+    </button>
+  </div>
+
+  <div class="mt-auto"></div>
+  <div class="flex flex-col gap-3 px-4 mt-10">
+    <a href="javascript:;" class="justify-start gap-2 btn btn-text hover-underline-wrapper">
+      <c-icon class="text-2xl icon text-primary" href="/img/icons.svg#map-point"></c-icon>
+      <div class="font-medium hover-underline text-[15px]">г. Краснодар, ул. Северная 490</div>
+    </a>
+    <a href="javascript:;" class="justify-start gap-2 btn btn-text hover-underline-wrapper">
+      <c-icon class="text-2xl icon text-primary" href="/img/icons.svg#email"></c-icon>
+      <div class="font-medium hover-underline text-[15px]">marketing_consulting@arverresult.store</div>
+    </a>
+  </div>
+  <div class="px-4 mt-10">
+    <div class="flex gap-6">
+      <button class="btn btn-text">
+        <img src="/img/vk.svg" alt="" class="text-5xl icon" />
+      </button>
+      <button class="btn btn-text">
+        <img src="/img/telegram.svg" alt="" class="text-5xl icon" />
+      </button>
+      <button class="btn btn-text">
+        <img src="/img/instagram.svg" alt="" class="text-5xl icon" />
+      </button>
+    </div>
+  </div>
+</div>
+<div class="menu-shadow"></div>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-top">
+      <div class="hero-about about" data-animation="fadeInLeft">
+        <div class="about-image">
+          <picture>
+            <source media="(min-width: 609.98px)" srcset="img/about.png" />
+            <img src="img/about-sm.png" alt="" class="mx-auto" />
+          </picture>
+          <div class="absolute inset-0 flex sm:left-1/4">
+            <img src="img/play-circle.svg" alt="" class="m-auto icon text-[88px]" />
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="mb-3 sm:mb-6 about-title font-alt">о нашей компании</div>
+          <div class="max-sm:text-sm">
+            Лидирующее, экспертное и динамически <br />
+            развивающееся агентство маркетинговых <br />
+            и консалтинговых услуг в сфере малого, <br />
+            среднего и крупного бизнесов
+          </div>
+          <button class="gap-3 mt-6 sm:mt-12 btn btn-primary btn-fill">
+            <img src="img/play-circle.svg" alt="" class="icon" />
+            <span class="font-bold">Смотреть видео</span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-benefit benefit" data-animation="fadeInRight">
+        <div class="benefit-title font-alt">наша польза</div>
+        <div class="flex flex-col gap-2">
+          <div class="benefit-item">
+            <div class="benefit-item-num"></div>
+            <div class="font-semibold max-sm:text-sm">Анализируем действующие процессы</div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item-num"></div>
+            <div class="font-semibold max-sm:text-sm">Находим упущенные возможности</div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item-num"></div>
+            <div class="font-semibold max-sm:text-sm">Структурируем работу от А до Я</div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item-num"></div>
+            <div class="font-semibold max-sm:text-sm">Оптимизируем бизнес-процессы</div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item-num"></div>
+            <div class="font-semibold max-sm:text-sm">Даем гарантии на результат</div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-2 hero-soc soc sm:gap-5 lg:grid-cols-4" data-animation="fadeInUp">
+        <a target="_blank" href="https://adverresult.store/" class="soc-item">
+          <img src="img/site.svg" alt="" class="text-3.5xl sm:text-4.5xl icon" />
+          <div class="font-extrabold font-alt sm:text-1.5xl">Наш Сайт</div>
+        </a>
+        <a target="_blank" href="https://vk.com/adverresult" class="soc-item">
+          <img src="img/vk.svg" alt="" class="text-3.5xl sm:text-4.5xl icon" />
+          <div class="font-extrabold font-alt sm:text-1.5xl">Наш ВК</div>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/arc__marketing?igsh=dHZ5MjI0MjBqc3hi" class="soc-item">
+          <img src="img/instagram.svg" alt="" class="text-3.5xl sm:text-4.5xl icon" />
+          <div class="font-extrabold font-alt sm:text-1.5xl">Наш Инстаграм</div>
+        </a>
+        <a target="_blank" href="https://t.me/adverresult" class="soc-item">
+          <img src="img/telegram.svg" alt="" class="text-3.5xl sm:text-4.5xl icon" />
+          <div class="font-extrabold font-alt sm:text-1.5xl">Наш Телеграм</div>
+        </a>
+      </div>
+    </div>
+    <div class="hero-bottom">
+      <div class="hero-service service" data-animation="fadeInUp" data-delay="0.05">
+        <div class="mb-5 service-title font-alt">другие услуги компании</div>
+        <div class="grid gap-3 sm:gap-4 sm:grid-cols-3 grow">
+          <div class="service-item">
+            <div class="font-alt uppercase font-extrabold text-1.5xl">маркетинг-реклама</div>
+            <div class="grid w-full grid-cols-3 gap-4 mt-5">
+              <div class="service-icon">
+                <img src="img/google.svg" alt="" class="mx-auto icon" />
+              </div>
+              <div class="service-icon">
+                <img src="img/yandex.svg" alt="" class="mx-auto icon" />
+              </div>
+              <div class="service-icon">
+                <img src="img/vk.svg" alt="" class="mx-auto icon" />
+              </div>
+              <div class="service-icon">
+                <img src="img/telegram.svg" alt="" class="mx-auto icon" />
+              </div>
+              <div class="service-icon">
+                <img src="img/instagram.svg" alt="" class="mx-auto icon" />
+              </div>
+              <div class="service-icon">
+                <img src="img/avito.svg" alt="" class="mx-auto icon" />
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="font-alt uppercase font-extrabold text-1.5xl">оптимизация</div>
+            <div class="grid w-full grid-cols-2 gap-4 mt-5">
+              <div class="service-icon">
+                <img src="img/optimisation/1.png" alt="" class="object-scale-down absolute-fit" />
+              </div>
+              <div class="service-icon">
+                <img src="img/optimisation/2.png" alt="" class="object-scale-down absolute-fit" />
+              </div>
+              <div class="service-icon">
+                <img src="img/optimisation/3.png" alt="" class="object-scale-down absolute-fit" />
+              </div>
+              <div class="service-icon">
+                <img src="img/optimisation/4.png" alt="" class="object-scale-down absolute-fit" />
+              </div>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="font-alt uppercase font-extrabold text-1.5xl">консалтинг</div>
+            <div class="grid w-full grid-cols-2 gap-4 mt-5">
+              <div class="col-span-full flex items-center justify-center gap-3 bg-[#E7986D] p-2 rounded-xl text-white">
+                <img src="img/panorama.svg" alt="" />
+                <div class="text-xs font-bold text-left">
+                  Открытие новых <br />
+                  горизонтов
+                </div>
+              </div>
+              <div class="service-icon">
+                <img src="img/question.svg" alt="" class="mx-auto icon" />
+              </div>
+              <div class="service-icon">
+                <img src="img/graph.svg" alt="" class="mx-auto icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        href="https://t.me/arc_portfolio"
+        target="_blank"
+        class="hero-reviews reviews"
+        data-animation="fadeInUp"
+        data-delay="0.1"
+      >
+        <div class="reviews-image">
+          <img src="img/reviews.jpg" alt="" />
+        </div>
+        <div class="reviews-title font-alt">наши отзывы</div>
+        <button class="mt-6 btn btn-primary btn-fill px-14">
+          <span class="font-bold">Смотреть всё</span>
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
 
 <%= require('./html-includes/footer.html')() %>

@@ -1,7 +1,7 @@
 const elementsSizes = {
   xs: '24px',
   sm: '32px',
-  base: '42px',
+  base: '50px',
   lg: '52px',
   xl: '64px',
 }
@@ -51,6 +51,7 @@ module.exports = {
     },
     fontFamily: {
       base: "'Inter', arial, helvetica, sans-serif",
+      alt: "'Akrobat', arial, helvetica, sans-serif",
     },
     zIndex: [0, 321, 322, 323, 324, 325, 326, 327, 328, 329, 'auto'],
     extend: {
